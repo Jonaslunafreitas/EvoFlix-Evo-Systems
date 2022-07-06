@@ -1,5 +1,7 @@
+import 'package:entrevista/widgets/trending.dart';
 import 'package:flutter/material.dart';
 import 'package:tmdb_api/tmdb_api.dart';
+
 
 void main()=>runApp(new MyApp());
 
@@ -56,7 +58,14 @@ print(trendingmovies);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("LunaFlix"),),
+      backgroundColor: Colors.black87,
+      appBar: AppBar(backgroundColor: Colors.transparent,
+        title: Text("LunaFlix"),),
+      body: ListView(
+          children: [
+            TrendingMovies(trending:trendingmovies)
+          ],
+      ),
     );
   }
 }
