@@ -1,4 +1,6 @@
+import 'package:entrevista/widgets/toprated.dart';
 import 'package:entrevista/widgets/trending.dart';
+import 'package:entrevista/widgets/tv.dart';
 import 'package:flutter/material.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
@@ -52,18 +54,26 @@ setState((){
   topratedmovies = topratedresult['results'];
   tv= tvresult['results'];
 });
-print(trendingmovies);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
-      appBar: AppBar(backgroundColor: Colors.transparent,
-        title: Text("LunaFlix"),),
+      appBar: AppBar(
+      backgroundColor: Colors.black87,
+      elevation: 0,
+      leading: Icon(
+        Icons.menu,
+        color: Colors.white,
+      ),
+        title: Text("LunaFlix"),
+      ),
       body: ListView(
           children: [
-            TrendingMovies(trending:trendingmovies)
+            TrendingMovies(trending:trendingmovies),
+            TopRated(toprated: topratedmovies),
+            TV(tv: tv)
           ],
       ),
     );
