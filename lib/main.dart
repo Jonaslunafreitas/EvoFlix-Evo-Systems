@@ -54,6 +54,7 @@ setState((){
   topratedmovies = topratedresult['results'];
   tv= tvresult['results'];
 });
+print(trendingmovies);
   }
 
   @override

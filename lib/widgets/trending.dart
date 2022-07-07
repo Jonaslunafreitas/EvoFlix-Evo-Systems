@@ -27,21 +27,29 @@ crossAxisAlignment: CrossAxisAlignment.start,
 
               },
               child: Container(
-                width: 140,
+                padding: EdgeInsets.all(5),
+                width: 250,
                 child: Column(
                   children: [
                     Container(
-
-                      height:200,
-                      decoration: BoxDecoration(image: DecorationImage(
-                        image: NetworkImage(
-                          'https://image.tmdb.org/t/p/w500'+trending[index]['poster_path']
-                        )
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                'https://image.tmdb.org/t/p/w500' +
+                                    trending[index]['backdrop_path']),
+                            fit: BoxFit.cover),
                       ),
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          color: Colors.transparent,
-                      ),
+                      height: 140,
                     ),
+                    SizedBox(height: 5),
+                    Container(
+                      child: modified_text(
+                          size: 15,
+                          text: trending[index]['original_title'] != null
+                              ? trending[index]['original_title']
+                              : 'carregando...'),
+                    )
                   ],
                 ),
               ),
