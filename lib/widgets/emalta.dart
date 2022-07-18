@@ -1,3 +1,4 @@
+import 'package:entrevista/description.dart';
 import 'package:entrevista/utils/text.dart';
 import 'package:flutter/material.dart';
 
@@ -24,9 +25,22 @@ crossAxisAlignment: CrossAxisAlignment.start,
               itemBuilder: (context, index){
             return InkWell(
               onTap:(){
-
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Description(
+                name: trending[index]['title'],
+                bannerurl:
+                'https://image.tmdb.org/t/p/w500' +
+                    trending[index]['backdrop_path'],
+                poster_path:
+                'https://image.tmdb.org/t/p/w500' +
+                    trending[index]['poster_path'],
+                description: trending[index]['overview'],
+                vote: trending[index]['vote_average']
+                    .toString(),
+                launch_on: trending[index]
+                ['release_date'])));
               },
-              child: Container(
+              child:
+              trending[index]['title']!=null?Container(
                 padding: EdgeInsets.all(5),
                 width: 250,
                 child: Column(
@@ -48,11 +62,11 @@ crossAxisAlignment: CrossAxisAlignment.start,
                           size: 15,
                           text: trending[index]['original_title'] != null
                               ? trending[index]['original_title']
-                              : 'carregando...'),
+                              : trending[index]['name']),
                     )
                   ],
                 ),
-              ),
+              ):Container(),
             );
               }) ,)
         ],

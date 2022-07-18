@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 
 
-class TV extends StatelessWidget{
-  final List tv;
+class Avaliado extends StatelessWidget{
+  final List toprated;
 
-  const TV({super.key, required this.tv});
+  const Avaliado({super.key, required this.toprated});
   @override
   Widget build(BuildContext context){
     return Container(
@@ -16,17 +16,15 @@ class TV extends StatelessWidget{
 
 
         children: [
-          modified_text(text:'Series Populares', size:18,),
+          modified_text(text:'Melhores Avaliações', size:18,),
           SizedBox(height: 15,),
           Container(height: 200,
-            child: ListView.builder(itemCount: tv.length,
+            child: ListView.builder(itemCount: toprated.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index){
                   return InkWell(
-                    onTap:(){
-
-                    },
-                    child: Container(
+                    child:
+                    toprated[index]['title']!=null?Container(
                       width: 140,
                       child: Column(
                         children: [
@@ -35,7 +33,7 @@ class TV extends StatelessWidget{
                             height:200,
                             decoration: BoxDecoration(image: DecorationImage(
                                 image: NetworkImage(
-                                    'https://image.tmdb.org/t/p/w500'+tv[index]['poster_path']
+                                    'https://image.tmdb.org/t/p/w500'+toprated[index]['poster_path']
                                 )
                             ),
                               borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -44,7 +42,7 @@ class TV extends StatelessWidget{
                           ),
                         ],
                       ),
-                    ),
+                    ):Container(),
                   );
                 }) ,)
         ],
