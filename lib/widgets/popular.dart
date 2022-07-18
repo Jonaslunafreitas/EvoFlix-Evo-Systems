@@ -1,16 +1,16 @@
-import 'package:entrevista/pages/resultado.dart';
+
 import 'package:entrevista/utils/text.dart';
 import 'package:flutter/material.dart';
 
 import '../description.dart';
-import '../pages/teste.dart';
+import '../pages/Resultado2.dart';
 
 
 
-class TV extends StatelessWidget{
+class Popular extends StatelessWidget{
   final List tv;
 
-  const TV({super.key, required this.tv});
+  const Popular({super.key, required this.tv});
   @override
   Widget build(BuildContext context){
     return Container(
@@ -27,8 +27,7 @@ class TV extends StatelessWidget{
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index){
                   return InkWell(
-                    onTap: (){
-                      },
+                    onTap: (){},
                     child:
                     Container(
                       width: 140,

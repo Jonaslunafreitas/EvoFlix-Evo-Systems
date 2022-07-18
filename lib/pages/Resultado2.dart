@@ -45,7 +45,7 @@ class _TesteState extends State<Teste> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.network(
-              'https://raw.githubusercontent.com/Jonaslunafreitas/Lunaflix-Evo-Systems-/master/evoflix.png',
+              'https://raw.githubusercontent.com/Jonaslunafreitas/Lunaflix-Evo-Systems-/master/evoflix%20(1).png',
               fit: BoxFit.contain,
               height: 200,
             ),

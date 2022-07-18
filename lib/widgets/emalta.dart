@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 
 
-class TrendingMovies extends StatelessWidget{
+class EmAlta extends StatelessWidget{
  final List trending;
 
-  const TrendingMovies({super.key, required this.trending});
+  const EmAlta({super.key, required this.trending});
   @override
   Widget build(BuildContext context){
     return Container(
