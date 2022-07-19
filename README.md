@@ -1,16 +1,36 @@
-# entrevista
+<h1  align="center">
 
-A new Flutter project.
+<img  alt="EvoFlix"  title="EvoFlix"  src="https://github.com/Jonaslunafreitas/EvoFlix-Evo-Systems/blob/master/Design%20sem%20nome%20(4).png" />
+                                       EvoFlix
+</h1>
 
-## Getting Started
+## 🧪 Technologies
 
-This project is a starting point for a Flutter application.
+  
 
-A few resources to get you started if this is your first Flutter project:
+This project was developed using the following technologies:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+- [Dart](https://dart.dev)
+
+- [Flutter](https://flutter.dev/?gclid=Cj0KCQjwidSWBhDdARIsAIoTVb2bI6BOjmXOORNHle32uBwciW2gP0LeS4Lfy7WXB2ziys-tv6QcgccaAn-JEALw_wcB&gclsrc=aw.ds)
+
+    
+
+## 🔖 Layout
+
+  
+
+You can view the project layout through the links below:
+
+  
+
+- [Layout Web](https://www.figma.com/proto/ocGMjVCggf3LGftjTn3XMH/Layout-Front-End?node-id=0%3A1)
+
+  
+
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
+
+
+<p align="center"> by Jonas Luna</p>
