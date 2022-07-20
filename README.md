@@ -26,7 +26,7 @@ You can view the project layout through the links below:
 
   
 
-- [Layout Web](https://www.figma.com/proto/ocGMjVCggf3LGftjTn3XMH/Layout-Front-End?node-id=0%3A1)
+- [Layout Web](https://www.figma.com/file/7Hd582Qf1cgdmIyZhGM63E/EvoFlix)
 
   
 
